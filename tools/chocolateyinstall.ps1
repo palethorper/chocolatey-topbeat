@@ -7,31 +7,6 @@ $url        = 'https://download.elastic.co/beats/topbeat/topbeat-1.3.1-windows.z
 
 $installationPath = $toolsDir
 
-# # Now parse the packageParameters using good old regular expression
-# if ($packageParameters) {
-#   $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
-#   $option_name = 'option'
-#   $value_name = 'value'
-
-# if ($packageParameters -match $match_pattern ) {
-#     $results = $packageParameters | Select-String $match_pattern -AllMatches
-#     $results.matches | % {
-#       $arguments.Add(
-#       $_.Groups[$option_name].Value.Trim(),
-#       $_.Groups[$value_name].Value.Trim())
-#     }
-#   }
-#   else
-#   {
-#     Throw "Package Parameters were found but were invalid (REGEX Failure)"
-#   }
-
-#   if ($arguments.ContainsKey("InstallationPath")) {
-#     Write-Host "You want to use a custom Installation Path"
-#     $installationPath = $arguments["InstallPath"]
-#   }
-# }
-
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $installationPath
