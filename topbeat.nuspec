@@ -7,10 +7,14 @@
     <authors>Robert Palethorpe</authors>
     <owners>palethorper</owners>
     <licenseUrl>https://cdn.rawgit.com/elastic/beats/master/LICENSE</licenseUrl>
-    <projectUrl>https://www.elastic.co/products/beats/filebeat</projectUrl>
+    <projectUrl>https://www.elastic.co/downloads/beats/topbeat</projectUrl>
     <iconUrl>http://cdn.rawgit.com/palethorper/chocolatey-topbeat/master/icons/topbeat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Topbeat stream this information to Logstash for further parsing and enrichment or to Elasticsearch for centralized storage and analysis.</description>
+    <description>
+Gather Infrastructure Metrics
+
+Looking for a better way to understand how your server resources are used? The best place to start is your infrastructure metrics. Topbeat is a lightweight way to gather CPU, memory, and other per-process and system wide data, then ship it to Elasticsearch to analyze the results.
+</description>
     <summary>Topbeat is a lightweight, open source shipper for Windows filesystem, system and process statistics</summary>
     <releaseNotes />
     <copyright />
